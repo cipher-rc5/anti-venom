@@ -2,6 +2,8 @@
 
 A powerful Nushell script for fetching and analyzing EVM blockchain transactions with advanced features like transaction translations, address labeling, and intelligent caching.
 
+![anti-venom_demo](anti-venom_demo.png)
+
 ## Features
 
 - 🔍 **Transaction Fetching**: Query transactions for any EVM address across multiple chains
