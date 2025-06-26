@@ -401,7 +401,7 @@ def main [
 
         print "\nCredentials:"
         print $"  EVM_ADDR: (if $final_config.evm_addr != null { '✓ Set' } else { '✗ Not set' })"
-        print $"  NOVES_API_KEY: (if $final_config.noves_api_key != null { '✓ Set (hidden)' } else { '✗ Not set' })"
+        print $"  NOVES_API_KEY: (if $final_config.noves_api_key != null { '✓ Set (hidden)' } else { '⚠️  Not set (optional)' })"
         print $"  SIM_API_KEY: (if $final_config.sim_api_key != null { '✓ Set (hidden)' } else { '✗ Not set' })"
 
         print $"\nConfiguration File: ($env.HOME)/.config/anti-venom/config.toml"
@@ -590,14 +590,14 @@ def "main init" [] {
     let env_example = ".env.example"
     if not ($env_example | path exists) {
         "# EVM Transaction Fetcher Configuration
-# Copy this file to .env and fill in your values
+        # Copy this file to .env and fill in your values
 
-# Your EVM address (can also be set in config.toml)
-EVM_ADDR=0x...
+        # Your EVM address (can also be set in config.toml)
+        EVM_ADDR=0x...
 
-# API Keys (required, keep these secret!)
-SIM_API_KEY=your-dune-api-key-here
-NOVES_API_KEY=your-noves-api-key-here" | save -f $env_example
+        # API Keys
+        SIM_API_KEY=your-dune-api-key-here  # Required
+        NOVES_API_KEY=your-noves-api-key-here  # Optional - enables transaction translations" | save -f $env_example
         print $"✓ Created example .env file at ($env_example)"
     }
 
