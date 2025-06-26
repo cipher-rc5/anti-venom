@@ -1,0 +1,62 @@
+# dependencies (bun install)
+node_modules
+
+# output
+out
+dist
+*.tgz
+bun.lock
+
+# code coverage
+coverage
+*.lcov
+
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.dev
+.dev.vars
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+.cache/
+~/.cache/evm-transactions/
+
+# IntelliJ based IDEs
+.idea
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Finder (MacOS) folder config
+.DS_Store
+Thumbs.db
+
+# user data
+address_book.csv
+
+# user configuration
+config.toml
+
+# project specific
+/_dev
+/_misc
+/data
+/exports
+
+# keep examples
+!.env.example
+!address_book_example.csv

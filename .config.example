@@ -1,0 +1,19 @@
+evm_addr = null  # Your default EVM address
+default_limit = 25
+cache_dir = "~/.cache/evm-transactions"
+address_book_path = "address_book.csv"
+retry_attempts = 3
+retry_delay_ms = 1000
+parallel_workers = 10
+default_format = "table"
+timestamp_format = "unix"  # relative, unix, human
+sort_by = "block_time"
+sort_order = "desc"
+
+[colors]
+current_address = "green"
+success = "green"
+failure = "red"
+address_prefix = "blue"
+address_even = "yellow"
+address_odd = "cyan"
