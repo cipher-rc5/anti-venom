@@ -20,7 +20,7 @@ A powerful Nushell script for fetching and analyzing EVM blockchain transactions
 - [Nushell](https://www.nushell.sh/) (0.91.0 or later)
 - API Keys:
   - [Dune Analytics API Key](https://dune.com/docs/api/) (SIM_API_KEY)
-  - [Noves Translate API Key](https://docs.noves.fi/) (NOVES_API_KEY)
+  - [Noves Translate API Key](https://docs.noves.fi/) (NOVES_API_KEY; optional - for transaction translations)
 
 ## Installation
 
@@ -59,7 +59,7 @@ SIM_API_KEY=your-dune-api-key
 NOVES_API_KEY=your-noves-api-key
 ```
 
-### Config File (~/.config/evm-fetcher/config.toml)
+### Config File (~/.config/anti-venom/config.toml)
 
 The config file supports various customization options:
 
@@ -174,9 +174,9 @@ Fetch transactions for a specific address:
 
 ### author
 
-**@author:** ℭ𝔦𝔭𝔥𝔢𝔯
-**gh:** cipher-rc5
-**tg**: cipher0091
+@author: ℭ𝔦𝔭𝔥𝔢𝔯  
+gh: cipher-rc5   
+tg: cipher0091   
 
 ## License
 
